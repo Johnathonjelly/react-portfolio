@@ -1,7 +1,7 @@
 import React, { Component } from "react";
+import CenterMePic from "../images/centerMePic.jpg";
 
 //images
-import BigMe from "../images/bigMePic.jpg";
 import Css3Icon from "../images/css3.png";
 import GraphQLIcon from "../images/GraphQL_Logo.svg.png";
 import Html5Icon from "../images/HTML5_Logo_512.png";
@@ -18,48 +18,32 @@ export default class Body extends Component {
     return (
       <div>
         <div className="tile is-ancestor">
-          <div className="tile is-vertical">
-            <div className="tile">
-              <div className="tile is-parent">
-                <article className="tile is-child box">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Commodi expedita, esse velit tenetur eius doloremque at
-                    delectus voluptatibus, fuga facere illo vitae doloribus, in
-                    repellat voluptates exercitationem hic officia fugiat.
-                  </p>
-                </article>
-                <article className="tile is-child box">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Necessitatibus, libero iure. Debitis repudiandae porro
-                    inventore, quas est quidem. Fuga expedita architecto,
-                    tempore aspernatur, nihil numquam necessitatibus beatae
-                    labore eius natus!
-                  </p>
-                </article>
-              </div>
-              <div className="tile is-parent">
-                <article className="tile is-child box">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Quae officia nam pariatur blanditiis libero, doloremque,
-                    quia optio dicta doloribus quibusdam dolorem perferendis
-                    maxime modi sed velit recusandae suscipit, mollitia
-                    laboriosam.
-                  </p>
-                </article>
-              </div>
+          <div className="tile is-parent">
+            <div className="tile is-child box">
+              <figure className="has-text-centered animated flipInX">
+                <img
+                  src={CenterMePic}
+                  style={CenterPictureStyle}
+                  alt="Picture of Johnathon"
+                />
+              </figure>
             </div>
-            <div className="tile is-parent">
-              <article className="tile is-child box">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Quibusdam adipisci culpa vitae explicabo id reprehenderit
-                  placeat molestiae amet quae facilis nihil perspiciatis
-                  mollitia, non enim harum, error debitis ipsa accusantium.
-                </p>
-              </article>
+          </div>
+          <div className="tile is-4 is-vertical is-parent">
+            <div className="tile is-child box">
+              <p>
+                I'm Johnathon and I currently live in Oregon. My mission is to
+                provide great websites for great clients. I develope creative
+                solutions for back-end and front-end problems. I enjoy building
+                all kinds of websites; Full blown web applications or static
+                websites just providing information. I use a range of
+                technologies to make your web presence happen. From HTML5/CSS3
+                and JavaScript, to PHP and nodejs. I look foward to reading your
+                business inquiries at my email{" "}
+                <a href="mailto:johnathonsouthworth@gmail.com">
+                  Johnathon Southworth
+                </a>.
+              </p>
             </div>
           </div>
         </div>
@@ -67,3 +51,9 @@ export default class Body extends Component {
     );
   }
 }
+
+const CenterPictureStyle = {
+  borderRadius: "8px",
+  height: "auto",
+  MaxWidth: "100%"
+};

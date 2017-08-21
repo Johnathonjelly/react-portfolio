@@ -11,7 +11,8 @@ class Head extends Component {
             <div className="container">
               <h1 className="title">Johnathon Southworth</h1>
               <h4 className="subtitle">
-                Front-end <Plus /> Back-end Developer
+                Front-end <Plus className="animated infinite flip plusSign" />{" "}
+                Back-end Developer
               </h4>
             </div>
           </div>

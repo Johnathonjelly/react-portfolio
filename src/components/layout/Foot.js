@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Rodal from "rodal";
 //rodal styles
 import "rodal/lib/rodal.css";
-import MyPic from "../images/me.jpg";
+import BigMe from "../images/bigMePic.jpg";
 import Copyright from "react-icons/lib/fa/copyright";
 import Github from "react-icons/lib/fa/github";
 import Linkedin from "react-icons/lib/fa/linkedin";
@@ -33,31 +33,28 @@ export default class Foot extends Component {
             </button>
             <Rodal
               animation="rotate"
-              visible={this.state.visible}
+              height="514"
               onClose={this.rodalHideHandler.bind(this)}
-              className="rodal"
-              customStyles={rodalStyle}
+              visible={this.state.visible}
+              width="310"
             >
-              <div className="aboutMeModal" style={aboutMeModalStyle}>
-                <figure className="image is-96x96">
-                  <img src={MyPic} alt="A picture of me" />
-                </figure>
-                <p className="subtitle">Johnathon Southworth</p>
+              <div className="rodalContainer" style={rodalContainerStyle}>
+                <div className="imageContainer" style={imageContainerStyle}>
+                  <img src={BigMe} alt="A picture of Johnathon" />
+                </div>
                 <br />
-                <article className="message is-dark" style={modalArticleStyle}>
-                  <div className="message-body">
-                    <p>
-                      I believe in a craftsmanship model approach to life. It
-                      isn't what life can offer me, but what I can offer others.
-                    </p>
-                    <span>
-                      Contact me at{" "}
-                      <a href="mailto:southworthjohnathon@gmail.com">
-                        SouthworthJohnathon@gmail.com
-                      </a>
-                    </span>
-                  </div>
-                </article>
+                <div>
+                  <p>
+                    Everyone who practices web development is always learning
+                    and that is no different for me. There is always some up and
+                    coming hot library. There will always be that new comer
+                    language that promises to solve all your problems. I am
+                    someone who enjoys learning. Whether it be a new library, a
+                    new language, philosophy, or animal behavior. I then take
+                    that knowledge and share it with others. It isn't what the
+                    world can offer me, but what I can offer back to the world.
+                  </p>
+                </div>
               </div>
             </Rodal>
             <span className="links">
@@ -85,9 +82,16 @@ export default class Foot extends Component {
   }
 }
 
-const rodalStyle = {
-  width: "75vw",
-  height: "62vh"
+const imageContainerStyle = {
+  display: "flex",
+  justifyContent: "center"
+};
+
+const rodalContainerStyle = {
+  backgroundColor: "#f0fff0",
+  borderRadius: "12px",
+  fontSize: ".8rem",
+  padding: "5px"
 };
 
 const aboutMeModalStyle = {
