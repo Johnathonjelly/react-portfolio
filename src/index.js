@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import "./style/index.css";
 import registerServiceWorker from "./registerServiceWorker";
 import "bulma/css/bulma.css";

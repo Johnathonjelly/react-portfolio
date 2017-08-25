@@ -5,7 +5,7 @@ import Nav from "./Nav";
 class Head extends Component {
   render() {
     return (
-      <div>
+      <header>
         <section className="hero is-primary">
           <div className="hero-body">
             <div className="container">
@@ -18,7 +18,7 @@ class Head extends Component {
           </div>
         </section>
         <Nav />
-      </div>
+      </header>
     );
   }
 }

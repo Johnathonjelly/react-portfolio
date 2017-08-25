@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Head from "./layout/Head";
-import Foot from "./layout/Foot";
 
 //images
 import Css3Icon from "./images/css3.png";
@@ -20,14 +18,26 @@ import MouseThumb from "./images/mouseThumb.png";
 class About extends Component {
   render() {
     return (
-      <div className="animated fadeIn">
+      <div className="animated fadeIn slowerFadeIn">
         <div className="tile is-ancestor">
           <div className="tile is-parent is-vertical">
             <div className="tile is-child box">
               <section>
-                <h1 className="is-size-4 has-text-grey-darker">
-                  Here are a few projects of mine
+                <h1 className="is-size-4 has-text-grey-darker has-text-centered">
+                  Projects
                 </h1>
+                <br />
+                <p>
+                  First and foremost is this website. I encourage you to view
+                  the source code at{" "}
+                  <a
+                    href="https://github.com/Johnathonjelly/react-portfolio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    github.com.
+                  </a>
+                </p>
                 <dl>
                   <dt />
                   <dd>
@@ -36,6 +46,7 @@ class About extends Component {
                       <a
                         href="http://codepen.io/Johnathon_Southworth/#"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         codepen
                       </a>{" "}
@@ -65,6 +76,7 @@ class About extends Component {
                           <a
                             href="http://stoic-cookbook.com/register.php"
                             target="_blank"
+                            rel="noopener noreferrer"
                           >
                             Note Taking Application
                           </a>
@@ -106,6 +118,7 @@ class About extends Component {
                           <a
                             href="https://codepen.io/Johnathon_Southworth/full/aJGWKm/"
                             target="_blank"
+                            rel="noopener noreferrer"
                           >
                             Project in vuejs
                           </a>
@@ -143,6 +156,7 @@ class About extends Component {
                           <a
                             href="https://codepen.io/Johnathon_Southworth/project/full/AOPzBp/"
                             target="_blank"
+                            rel="noopener noreferrer"
                           >
                             Cat and Mouse Project
                           </a>
@@ -169,56 +183,116 @@ class About extends Component {
               </h2>
               <br />
               <div style={techIconDivStyle}>
-                <img
-                  className="techIcons animated infinite pulse"
-                  src={Html5Icon}
-                  alt="HTML5 Icon"
-                />
-                <img
-                  className="techIcons animated infinite pulse"
-                  src={Css3Icon}
-                  alt="CSS3 Icon"
-                />
-                <img
-                  src={SassIcon}
-                  alt="SASS Icon"
-                  className="techIcons animated infinite pulse"
-                />
-                <img
-                  src={JavaScriptIcon}
-                  alt="JavaScript Icon"
-                  className="techIcons animated infinite pulse"
-                />
-                <img
-                  src={VueIcon}
-                  alt="Vuejs Icon"
-                  className="techIcons animated infinite pulse"
-                />
-                <img
-                  src={ReactIcon}
-                  alt="Reactjs Icon"
-                  className="techIcons animated infinite pulse"
-                />
-                <img
-                  src={GraphQLIcon}
-                  alt="GraphQL Icon"
-                  className="techIcons animated infinite pulse"
-                />
-                <img
-                  src={MongoDBIcon}
-                  alt="MongoDB Icon"
-                  className="techIcons animated infinite pulse"
-                />
-                <img
-                  src={SQLIcon}
-                  alt="mySQL Icon"
-                  className="techIcons animated infinite pulse"
-                />
-                <img
-                  src={PhpIcon}
-                  alt="PHP Icon"
-                  className="techIcons animated infinite pulse"
-                />
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="techIcons slowPulse animated infinite pulse"
+                    src={Html5Icon}
+                    alt="HTML5 Icon"
+                  />
+                </a>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="techIcons slowPulse animated infinite pulse"
+                    src={Css3Icon}
+                    alt="CSS3 Icon"
+                  />
+                </a>
+                <a
+                  href="http://sass-lang.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={SassIcon}
+                    alt="SASS Icon"
+                    className="techIcons slowPulse animated infinite pulse"
+                  />
+                </a>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={JavaScriptIcon}
+                    alt="JavaScript Icon"
+                    className="techIcons slowPulse animated infinite pulse"
+                  />
+                </a>
+                <a
+                  href="https://vuejs.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={VueIcon}
+                    alt="Vuejs Icon"
+                    className="techIcons slowPulse animated infinite pulse"
+                  />
+                </a>
+                <a
+                  href="https://facebook.github.io/react/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={ReactIcon}
+                    alt="Reactjs Icon"
+                    className="techIcons slowPulse animated infinite pulse"
+                  />
+                </a>
+                <a
+                  href="http://graphql.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={GraphQLIcon}
+                    alt="GraphQL Icon"
+                    className="techIcons slowPulse animated infinite pulse"
+                  />
+                </a>
+                <a
+                  href="https://www.mongodb.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={MongoDBIcon}
+                    alt="MongoDB Icon"
+                    className="techIcons slowPulse animated infinite pulse"
+                  />
+                </a>
+                <a
+                  href="https://www.mysql.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={SQLIcon}
+                    alt="mySQL Icon"
+                    className="techIcons slowPulse animated infinite pulse"
+                  />
+                </a>
+                <a
+                  href="http://php.net/manual/en/intro-whatis.php"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={PhpIcon}
+                    alt="PHP Icon"
+                    className="techIcons slowPulse animated infinite pulse"
+                  />
+                </a>
               </div>
             </div>
           </div>
