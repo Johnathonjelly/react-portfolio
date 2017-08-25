@@ -2,19 +2,17 @@ import React, { Component } from "react";
 // import logo from "../logo.svg";
 import "../style/App.css";
 import Head from "./layout/Head";
-import Body from "./layout/Body";
+import InitialPage from "./InitialPage";
 import Foot from "./layout/Foot";
 
-class App extends Component {
+class Home extends Component {
   render() {
     return (
       <div className="App">
-        <Head />
-        <Body />
-        <Foot />
+        <InitialPage />
       </div>
     );
   }
 }
 
-export default App;
+export default Home;

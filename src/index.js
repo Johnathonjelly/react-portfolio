@@ -7,14 +7,17 @@ import "bulma/css/bulma.css";
 import "animate.css/animate.min.css";
 
 import Head from "./components/layout/Head";
-import App from "./components/App";
-import About from "./components/About";
+import Home from "./components/Home";
+import Projects from "./components/Projects";
+import Foot from "./components/layout/Foot";
 
 ReactDOM.render(
   <Router>
     <div className="containter">
-      <Route exact path="/" component={App} />
-      <Route path="/About" component={About} />
+      <Head />
+      <Route exact path="/" component={Home} />
+      <Route path="/Projects" component={Projects} />
+      <Foot />
     </div>
   </Router>,
   document.getElementById("root")

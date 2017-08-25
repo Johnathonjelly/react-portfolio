@@ -16,10 +16,23 @@ html {
   -moz-animation-iteration-count: infinite;
 }
 
+.title,
+.subtitle {
+  animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s;
+  -moz-animation-duration: 2.5s;
+}
+
 /****************************************/
 
 /****************Body********************/
+.small {
+  font-size: .5rem;
+}
 
+.techIcons {
+  width: 5vw;
+}
 /*****************************************/
 /**************Footer*******************/
 .copyright {
@@ -71,6 +84,12 @@ html {
   -moz-animation-iteration-count: infinite;
 }
 /**************************************/
+.active {
+  color: #bbbfbb !important;
+  cursor: default;
+  pointer-events: none;
+}
+
 .nav {
   background-color: #5e5656;
   border-radius: 0 0 8px 8px;
@@ -87,11 +106,16 @@ html {
   }
 
   .subtitle {
-    font-size: .7rem;
+    font-size: .8rem;
   }
 
   .title {
-    font-size: 1rem;
+    font-size: 1.7rem;
+  }
+
+  .title,
+  .subtitle {
+    text-align: center;
   }
 
   .uppercase {

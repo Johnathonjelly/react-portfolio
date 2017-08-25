@@ -1,19 +1,24 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 class Nav extends Component {
+  getUrl() {
+    return window.location.pathname;
+  }
+
   render() {
     return (
       <div className="nav">
         <nav className="breadcrumb is-right" aria-label="breadcrumbs">
-          <ul>
-            <li className="is-active">
-              <a href="#">Home</a>
-            </li>
+          <ul onClick={console.log(this.getUrl())}>
             <li>
-              <a href="#">About</a>
+              <NavLink exact to="/" activeClassName="active">
+                Home
+              </NavLink>
             </li>
+
             <li>
-              <a href="#">Other</a>
+              <NavLink to="/Projects">Projects</NavLink>
             </li>
           </ul>
         </nav>
